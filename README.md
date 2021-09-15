@@ -20,7 +20,7 @@ __Sever: houses the traditional Business layer__
   * ViewModel Objects (C# .dll)
   * Entity and Model Objects (C# .dll) - Data Access Layer
 
-__Data: __
+__Data__
 - SQL Server Tables
 
 ### Installing
