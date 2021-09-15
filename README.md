@@ -1,4 +1,4 @@
-# Help Desk - YC C# /w jQuery/JavaScript Project
+# Help Desk - YC C# /w jQuery,JavaScript Project
 
 "Any problems on your devices in the office? Please open ticket on Help Desk!!!"
 
