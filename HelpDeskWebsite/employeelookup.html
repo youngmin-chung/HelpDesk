@@ -1,0 +1,48 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Employee Lookup</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,iVBORw0KGo=" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="mx-4 my-4">
+        <div class="card">
+            <div class="card-header text-center">
+                Employee Information
+            </div>
+            <div class="card-body">
+                <div class="row ml-1">
+                    <div class="col-3" style="font-weight:bold">Title:</div>
+                    <div class="col-2.5" id="title"></div>
+                    <div class="col-3 text-right" style="font-weight:bold">First:</div>
+                    <div class="col-4" id="firstname"></div>
+                </div>
+                <div class="row ml-1">
+                    <div class="col-3" style="font-weight:bold">Phone:</div>
+                    <div class="col-8.5" id="phone"></div>
+                </div>
+                <div class="row ml-1">
+                    <div class="col-3" style="font-weight:bold">Email:</div>
+                    <div class="col-8.5" id="email"></div>
+                </div>
+                <div class="row ml-1">
+                    <div class="col-3" style="font-weight:bold">Last:</div>
+                    <div class="col-8.5">
+                        <input type="text" placeholder="enter last name" id="TextBoxLastname" class="form-control my-2" />
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="card-footer text-center">
+            <input type="button" value="Find Employee" id="getbutton" />
+            <div id="status" class="text-left mt-3 mb-2"></div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <script src="Scripts/employeelookup.js"></script>
+</body>
+</html>

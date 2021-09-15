@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Lab 10</title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <a class="navbar-brand" hrdf="#">CaseStudy1</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" herf="/Employeelookup.html">Original Lookup</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/modalexample.html">Modal</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="/Lab10.html">Lab10</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="card col-10 col-sm-4 text-center mt-5" style=" margin: 0 auto; float: none;">
+        <div class="card-heading text-center">
+            Update Employee
+        </div>
+        <div class="card-body">
+            <input type="text" placeholder="enter last name" id="TextBoxFindLastname" class="form-control" />
+            <input type="button" value="Find" id="getbutton" class="mt-2" />
+        </div>
+    </div>
+    <div class="modal fade text-center" data-backdrop="static" id="theModal">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header d-block">
+                    <button type="button" class="close float-right" data-dismiss="modal" arial-label="Cloase">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                    <h1 class="modal-title text-center">Lab 10</h1>
+                </div>
+                <div class="modal-body">
+                    <div class="mx-4 my-4">
+                        <div class="card">
+                            <div class="card-header text-center">
+                                Employee Information
+                            </div>
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-4">Title</div>
+                                    <div class="col-8"><input type="text" placeholder="enter title" id="TextBoxTitle" class="form-control" /></div>"
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">First:</div>
+                                    <div class="col-8"><input type="text" placeholder="enter first name" id="TextBoxFirstname" class="form-control" /></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">Surname</div>
+                                    <div class="col-8"><input type="text" placeholder="enter last name" id="TextBoxLastname" class="form-control" /></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">Phone#:</div>
+                                    <div class="col-8"><input type="text" placeholder="enter phone number" id="TextBoxPhone" class="form-control" /></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-4">Email:</div>
+                                    <div class="col-8"><input type="text" placeholder="enter email address" id="TextBoxEmail" class="form-control" /></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="car-footer text-center">
+                        <input type="button" value="Update" id="updatebutton" />
+                        <div id="status" class="text-left mt-3 mb-2"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/lab10.js"></script>
+</body>
+</html>

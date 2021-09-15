@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Case 2</title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="Content/employee.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbarContent">
+        <a class="navbar-brand" href="/home.html"><img src="img/logo.png" style="width:50px;height:50px;margin-left:5px;" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home.html">Home<span class="sr-only">(curren)</span></a>
+                </li>
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="/employee.html">Employee</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/call.html">Call</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="/report.html">Report</a>
+                </li>
+            </ul>
+        </div>
+        <span style="color:#fff;">
+            Search
+        </span>
+        &nbsp;&nbsp;
+        <div class="form-group mt-2 mr-2">
+            <input type="text" class="form-control" id="srch" placeholder="Search" />
+        </div>
+    </nav>
+    <p style="text-align:center;"><img src="img/helpdesk.jpg" style="width:200px;height:200px;" /></p>
+    <h1 align="center">Reports</h1>
+    <h5 align="center">v2.0</h5>
+
+    <div id="0" style=" margin:10% 2% 2% 2%; ">
+
+        <div class="list-group-item " style="padding-top: 1%; padding-bottom: 2%" id="report">
+            <div>
+                <input type="button" style="background-color:white; padding: 0.5%; border-top-left-radius: 5px; border-top-right-radius: 5px;  border-style: solid; border-bottom:none" value="Employee Report" id="employeebutton" class="col-12 text-left" />
+            </div>
+            <div>
+                <input type="button" style="background-color:white; padding: 0.5%; border-bottom-left-radius: 5px; border-bottom-right-radius: 5px;  border-style: solid;" value="Call Report" id="callbutton" class="col-12 text-left" />
+            </div>
+
+            <div id="lblstatus" class="text-left mt-3 mb-2 text-center"></div>
+        </div>
+    </div>
+
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <script src="Scripts/Report.js"></script>
+</body>
+</html>
+
+
+
+
+
+

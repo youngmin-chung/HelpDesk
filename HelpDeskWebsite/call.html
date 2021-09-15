@@ -1,0 +1,138 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Case 2</title>
+    <meta charset="utf-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="icon" href="data:;base64,iVBORw0KGgo=">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link href="Content/employee.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark" id="navbarContent">
+        <a class="navbar-brand" href="/home.html"><img src="img/logo.png" style="width:50px;height:50px;margin-left:5px;" /></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <!--Home page-->
+                <li class="nav-item">
+                    <a class="nav-link" href="/Home.html">Home<span class="sr-only">(curren)</span></a>
+                </li>
+                <!--Employee page-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="/employee.html">Employee</a>
+                </li>
+                <!--Call page-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="/call.html">Call</a>
+                </li>
+                <!--Report page-->
+                <li class="nav-item active">
+                    <a class="nav-link" href="/report.html">Report</a>
+                </li>
+            </ul>
+        </div>
+        <span style="color:#fff;">
+            Search
+        </span>
+        &nbsp;&nbsp;
+        <div class="form-group mt-2 mr-2">
+            <input type="text" class="form-control" id="srch" placeholder="Search" />
+        </div>
+    </nav>
+    <p style="text-align:center;"><img src="img/helpdesk.jpg" style="width:200px;height:200px;" /></p>
+    <h1 align="center">Calls</h1>
+    <h5 align="center">v2.0</h5>
+
+
+    <div class="justify-content-center align-items-center row mt-1 ml-1">
+        <div class="list-group col-12" id="callList"></div>
+    </div>
+    <!--Call Modal Form-->
+    <form id="CallModalForm" name="CallModalForm" method="post" action="">
+        <div class="modal fade text-center mr-3" data-backdrop="static" id="theModal">
+            <div class="modal-dialog modal-lg">
+                <div id="popwindow" class="modal-content">
+                    <div class="modal-header d-block">
+                        <button type="button" class="close float-right" data-dismiss="modal" arial-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        <div class="modal-title text-center" id="modaltitle"></div>
+                        <p style="text-align:center;"><img src="img/All.jpg" style="width:400px;height:200px;" /></p>
+                    </div>
+                    <!--Modal Body-->
+                    <div class="modal-body">
+                        <div class="mx-4 my-4">
+                            <div class="card">
+                                <div class="card-header text-center">
+                                    Call Information v2.0
+                                </div>
+                                <!--Card Body-->
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-4">Problem:</div>
+                                        <div class="col-8"><select id="ddlPros" name="ddlPros" class="form-control"></select></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">Employee:</div>
+                                        <div class="col-8"><select id="ddlEmps" name="ddlEmps" class="form-control"></select></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-4">Technician:</div>
+                                        <div class="col-8"><select id="ddlTechs" name="ddlTechs" class="form-control"></select></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="text-right col-4">Date Opened:</div>
+                                        <div class="col-8 text-left">
+                                            <label id="labelDateOpened"></label>
+                                            <input type="hidden" id="dateOpened" />
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="text-right col-4">Date Closed:</div>
+                                        <div class="col-8 text-left">
+                                            <label id="labelDateClosed"></label>
+                                            <input type="hidden" id="dateClosed" />
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="text-right col-4">Close Call:</div>
+                                        <div class="col-8"><input style="width: 20px;" type="checkbox" name="checkBoxClose" value="checkBoxClose" id="checkBoxClose" class="form-control" /></div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="text-right col-4">Notes:</div>
+                                        <div class="col-8">
+                                            <textarea id="textAreaNotes" name="textAreaNotes" rows="4" class="form-control"></textarea>
+                                        </div>
+                                    </div>
+
+                                </div> <!--End Card Body-->
+                            </div>
+                        </div>
+                        <div class="card-footer text-center">
+                            <!--Card Footer-->
+                            <input type="button" class="btn btn-secondary" value="Update" id="actionbutton" />
+                            <input type="button" class="btn btn-secondary" data-toggle="confirmation" id="deletebutton" data-placement="right" value="Delete" />
+                            <div id="modalstatus" class="text-left mt-3 mb-2"></div>
+                        </div><!--End Card Footer-->
+                    </div> <!--End Modal Body-->
+                </div>
+            </div>
+        </div>
+    </form>
+    <!--Script Here-->
+    <script src="Scripts/jquery-3.6.0.min.js"></script>
+    <script src="Scripts/jquery.validate.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <script src="Scripts/bootstrap.bundle.min.js"></script>
+    <script src="Scripts/bootstrap-confirmation.js"></script>
+    <script src="Scripts/call.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+﻿
+
+body {
+    font: 16px/1.7 arial, sans-serif;
+    background-color: antiquewhite;
+}
+
+#wrap {
+    width: 90%;
+    background-color: #f2f2f2;
+    font-weight: normal; /* remove default bold */
+    margin: 0 auto;
+    border: 1px solid black;
+}
+
+#header {
+    margin: auto;
+    color: #999;
+}
+
+#navbarContent, #report {
+    background-color: rgba(255,140,0,0.3);
+    padding: 2px 0;
+    margin: 1% 4%;
+    border-top: 0.1px solid #999;
+    border-bottom: 0.1px solid #999;
+    border-left: white;
+    border-right: white;
+}
+
+    #navbarContent ul {
+        list-style: none; /* removes bullets */
+        padding: 0;
+    }
+
+    #navbarContent li {
+        display: inline; /*display in a line */
+        padding-right: 25px; /* space them out*/
+    }
+
+    #navbarContent a, #status, #heading, #EmployeeList, #callList, #report {
+        font-family: 'Oswald', sans-serif;
+        color: #999;
+        font-weight: bold;
+        font-size: 18px;
+        text-decoration: none; /*removes underline */
+    }
+
+#status {
+    background-color: rgba(255,140,0,0.3);
+}
+
+h1, h2, p {
+    font-family: 'Oswald', sans-serif;
+    margin: 25px 10px 20px 10px;
+}
